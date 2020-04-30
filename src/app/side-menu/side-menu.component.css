@@ -1,0 +1,12 @@
+.nav-link {
+  color: dodgerblue;
+}
+.nav-link.active {
+  text-decoration: underline dodgerblue;
+  background-color: transparent;
+  color: dodgerblue;
+}
+
+.nav-link:hover {
+  text-decoration: underline dodgerblue;
+}
