@@ -1,16 +1,22 @@
-<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-  <h4 id="item-1">Item 1</h4>
-  <p>...</p>
-  <h5 id="item-1-1">Item 1-1</h5>
-  <p>...</p>
-  <h5 id="item-1-2">Item 1-2</h5>
-  <p>...</p>
-  <h4 id="item-2">Item 2</h4>
-  <p>...</p>
-  <h4 id="item-3">Item 3</h4>
-  <p>...</p>
-  <h5 id="item-3-1">Item 3-1</h5>
-  <p>...</p>
-  <h5 id="item-3-2">Item 3-2</h5>
-  <p>...</p>
+<div data-spy="scroll" data-target="#navbar" data-offset="0" [@bodyState]="state">
+  <img src="https://image.shutterstock.com/image-photo/bananas-grapes-600w-518328943.jpg"
+       width="150" height="150" class="rounded-circle marginer">
+  <div>
+    <h2 id="item-1">Michele Cafagna</h2>
+    <p>Sono nato in Puglia ma vivo da sempre in Emilia-Romagna. Adoro il coding, i videogame, la letteratura e i
+      tatuaggi.</p>
+    <p>Studio costantemente nuove tecnologie, trascinato dalla passione.</p>
+    <p>Costantemente alla ricerca del nuovo, cerco di creare i miei software in modo pulito, sempre con un occhio di
+      riguardo a design ed usabilità.</p>
+  </div>
+  <div>
+    <h2 id="item-2">Personal Experience</h2>
+    <app-experience-box *ngFor="let exp of experiences" [experience]="exp"></app-experience-box>
+  </div>
+  <div>
+    <h2 id="item-3">Contacts</h2>
+    <a href="mailto:mcafagna31@gmail.com">Gmail</a>
+    <br>
+    <a href="https://www.linkedin.com/in/michele-cafagna-966784122/">LinkedIn</a>
+  </div>
 </div>

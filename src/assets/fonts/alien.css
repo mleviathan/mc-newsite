@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Alien Encounters";
+  src: url("alien/SFAlienEncounters.ttf");
+}
+
+@font-face {
+  font-family: "Alien Encounters Italic";
+  src: url("alien/SFAlienEncounters-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Alien Encounters Solid";
+  src: url("alien/SFAlienEncountersSolid.ttf");
+}
+
+@font-face {
+  font-family: "Alien Encounters Solid Italic";
+  src: url("alien/SFAlienEncountersSolid-Ital.ttf");
+}
