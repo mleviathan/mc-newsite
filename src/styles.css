@@ -7,3 +7,11 @@ body {
   color: white;
   /*text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;*/
 }
+
+p {
+  font-family: 'Jost', sans-serif;
+  font-weight: 200;
+  margin: 0;
+  font-size: 14px;
+}
+

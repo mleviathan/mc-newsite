@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ExperienceInterface} from '../experience.interface';
+import {Experience} from '../experience.model';
 
 @Component({
   selector: 'app-experience-box',
@@ -8,7 +8,7 @@ import {ExperienceInterface} from '../experience.interface';
 })
 export class ExperienceBoxComponent implements OnInit {
 
-  @Input() public experience: ExperienceInterface = new ExperienceInterface('', '', '', '', '');
+  @Input() public experience: Experience = new Experience('', '', '', '', '');
 
   constructor() { }
 

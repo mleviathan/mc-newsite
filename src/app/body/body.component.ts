@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceInterface} from './experience.interface';
+import {Experience} from './experience.model';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+import {Skill} from './skill.model';
 
 @Component({
   selector: 'app-body',
@@ -17,14 +18,23 @@ import {animate, state, style, transition, trigger} from '@angular/animations';
   ])]})
 export class BodyComponent implements OnInit {
 
-  officineExp = new ExperienceInterface('Full Stack Developer', 'Officine Telematiche S.r.l',
+  officineExp = new Experience('Full Stack Developer', 'Officine Telematiche S.r.l',
     '10 2019', 'Current', 'Sviluppo di app Android ed iOS tramite Xamarin.\n' +
     '    Web app per importanti clienti con ASP.NET. Sviluppo di soluzioni per l\'industria attraverso Unity3D.');
-  experiences = Array<ExperienceInterface>(3);
+  experiences = Array<Experience>(3);
+  skills = Array<Skill>();
   state = 'preload';
 
   constructor() {
+    // Experiences
     this.experiences.push(this.officineExp);
+
+    // Skills
+    const cSharp: Skill = new Skill();
+    cSharp.name = 'C#';
+    cSharp.width = '75';
+    cSharp.percentage = 80;
+    this.skills.push(cSharp);
   }
 
   ngOnInit(): void {
